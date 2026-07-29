@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎀 A Little About You 🎀</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Trebuchet MS',sans-serif;
+}
+
+body{
+
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+
+background:linear-gradient(
+-45deg,
+#ffc1dc,
+#ffe4ef,
+#fbd3ff,
+#fff0f6
+);
+
+background-size:400% 400%;
+animation:bg 12s infinite;
+
+}
+
+
+@keyframes bg{
+
+50%{
+background-position:100% 50%;
+}
+
+}
+
+
+
+.card{
+
+width:min(92vw,430px);
+
+background:rgba(255,255,255,.95);
+
+padding:28px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+border:2px solid #ffd1e3;
+
+animation:pop .8s ease;
+
+}
+
+
+
+@keyframes pop{
+
+from{
+
+opacity:0;
+
+transform:scale(.85) translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+.emoji{
+
+font-size:32px;
+
+animation:float 2s infinite;
+
+}
+
+
+
+@keyframes float{
+
+50%{
+transform:translateY(-8px);
+}
+
+}
+
+
+
+h1{
+
+color:#ff4f87;
+
+margin:15px 0;
+
+}
+
+
+
+.subtitle{
+
+color:#777;
+
+margin-bottom:20px;
+
+}
+
+
+
+.section{
+
+padding:18px;
+
+border-radius:22px;
+
+margin:15px 0;
+
+text-align:left;
+
+}
+
+
+
+.nicknames{
+
+background:#fff3c4;
+
+}
+
+
+
+.memories{
+
+background:#ffe4ec;
+
+}
+
+
+
+.message{
+
+background:#daf8d8;
+
+}
+
+
+
+h3{
+
+color:#ff4f87;
+
+margin-bottom:10px;
+
+}
+
+
+
+p{
+
+color:#555;
+
+line-height:1.7;
+
+}
+
+
+
+.nick{
+
+text-align:center;
+
+font-size:22px;
+
+font-weight:bold;
+
+color:#6a1b9a;
+
+line-height:2;
+
+}
+
+
+
+button{
+
+margin-top:20px;
+
+padding:15px 38px;
+
+border:none;
+
+border-radius:40px;
+
+background:#111;
+
+color:white;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<div class="emoji">
+🎀 🌸 💖 🌸 🎀
+</div>
+
+
+<h1>
+Little Things To Remember ✨
+</h1>
+
+
+<div class="subtitle">
+Because every person has something special 💗
+</div>
+
+
+
+<div class="section nicknames">
+
+<h3>
+🧸 Favorite Nicknames 🎀
+</h3>
+
+<p class="nick">
+
+Baunipie 🎀🎀
+
+<br>
+
+Kuhu 🎀🎀
+
+<br>
+
+Cutie 💖
+
+</p>
+
+</div>
+
+
+
+<div class="section memories">
+
+<h3>
+🌸 Little Memories 💫
+</h3>
+
+<p>
+
+Some of the best memories are created from simple things...
+
+Random conversations, funny moments, silly jokes and those unexpected smiles that make normal days special. 💖
+
+</p>
+
+</div>
+
+
+
+<div class="section message">
+
+<h3>
+🌟 A Small Message 🎀
+</h3>
+
+<p>
+
+Never stop being yourself.
+
+Your kindness, your way of talking and your little habits are what make you different from everyone else. ✨
+
+Keep smiling and keep making beautiful memories. 🌸
+
+</p>
+
+</div>
+
+
+
+<button onclick="nextPage()">
+
+🎀 Continue The Surprise ➜ 🎀
+
+</button>
+
+
+</div>
+
+
+
+<script>
+
+function nextPage(){
+
+window.location.href="page3.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
