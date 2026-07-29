@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>A Little Letter For Kuhu 🎀</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffe1ee,#e8ddff);
+font-family:"Comic Sans MS",cursive;
+overflow:hidden;
+padding:10px;
+}
+
+
+/* Flying texts */
+
+.popup{
+
+position:absolute;
+background:white;
+padding:10px 16px;
+border-radius:30px;
+font-size:13px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+animation:float 3s ease-in-out infinite;
+z-index:5;
+}
+
+
+.one{
+top:8%;
+left:3%;
+color:#ff4f87;
+}
+
+
+.two{
+top:18%;
+right:3%;
+color:#9b59b6;
+animation-delay:1s;
+}
+
+
+.three{
+bottom:10%;
+left:5%;
+color:#27ae60;
+animation-delay:2s;
+}
+
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0) rotate(0deg);
+}
+
+50%{
+transform:translateY(-18px) rotate(3deg);
+}
+
+}
+
+
+
+/* Notebook */
+
+.notebook{
+
+width:92vw;
+max-width:430px;
+
+background:#fffdf7;
+
+padding:22px 18px;
+
+border-radius:22px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.2);
+
+animation:openBook 1.2s ease;
+
+background-image:
+linear-gradient(#ffd8e8 1px,transparent 1px);
+
+background-size:100% 30px;
+
+border-left:6px solid #ffb6d5;
+
+}
+
+
+
+@keyframes openBook{
+
+0%{
+opacity:0;
+transform:scale(.5) rotateY(80deg);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+
+
+h1{
+
+text-align:center;
+
+color:#ff4f87;
+
+font-size:25px;
+
+animation:titlePop 1s ease;
+
+}
+
+
+
+@keyframes titlePop{
+
+0%{
+opacity:0;
+transform:scale(.2);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+
+/* Letter */
+
+.letter{
+
+font-size:15.5px;
+line-height:1.8;
+
+}
+
+
+
+.line{
+
+opacity:0;
+transform:translateY(25px);
+
+animation:show .8s forwards;
+
+}
+
+
+
+.l1{
+animation-delay:.3s;
+color:#ff4f87;
+}
+
+.l2{
+animation-delay:1s;
+color:#555;
+}
+
+.l3{
+animation-delay:1.7s;
+color:#9b59b6;
+}
+
+.l4{
+animation-delay:2.4s;
+color:#3498db;
+}
+
+.l5{
+animation-delay:3.1s;
+color:#e67e22;
+}
+
+.l6{
+animation-delay:3.8s;
+color:#e74c3c;
+}
+
+.l7{
+animation-delay:4.5s;
+color:#ff69b4;
+font-weight:bold;
+}
+
+.l8{
+animation-delay:5.2s;
+color:#27ae60;
+}
+
+.l9{
+animation-delay:6s;
+color:#8e44ad;
+font-weight:bold;
+}
+
+
+
+@keyframes show{
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* Button */
+
+button{
+
+margin-top:20px;
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:40px;
+
+background:#111;
+
+color:white;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+animation:glow 2s infinite;
+
+}
+
+
+
+@keyframes glow{
+
+50%{
+
+transform:scale(1.05);
+
+box-shadow:0 0 30px #ff8fc1;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.notebook{
+
+padding:18px 14px;
+
+}
+
+
+h1{
+
+font-size:22px;
+
+}
+
+
+.letter{
+
+font-size:14px;
+
+}
+
+
+.popup{
+
+font-size:11px;
+
+padding:8px 12px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="popup one">
+🎤 Voice = Magical ✨
+</div>
+
+
+<div class="popup two">
+😂 Even mic gets jealous
+</div>
+
+
+<div class="popup three">
+🌸 Born to sing
+</div>
+
+
+
+<div class="notebook">
+
+
+<h1>
+💌 A Little Letter For You 💌
+</h1>
+
+
+<div class="letter">
+
+
+<p class="line l1">
+<b>Dear Kuhu, 🎀</b>
+</p>
+
+
+<p class="line l2">
+I wanted to write this little note because you deserve a little appreciation. 🌸
+</p>
+
+
+<p class="line l3">
+Your singing is honestly something special. 🎤✨  
+Your voice has a sweetness that can make every song feel more beautiful.
+</p>
+
+
+<p class="line l4">
+The emotions and confidence you put into your singing make every note feel alive. 💖
+</p>
+
+
+<p class="line l5">
+Sometimes I think even songs become happier when you choose to sing them. 😂🎶
+</p>
+
+
+<p class="line l6">
+But don't get too proud 😭  
+Your microphone might ask for your autograph before working. 🎤😂
+</p>
+
+
+<p class="line l7">
+Waise mujhe bhi thodaa suna diya kar 😭🎶  
+Itni achhi voice chhupana allowed nahi hai. ✨
+</p>
+
+
+<p class="line l8">
+Keep singing, keep improving, and never hide your amazing talent. 🌷
+</p>
+
+
+<p class="line l9">
+
+Stay the amazing Kuhu everyone loves. 🎀
+
+<br><br>
+
+With lots of friendship and best wishes 💕
+
+</p>
+
+
+</div>
+
+
+
+<button onclick="location.href='page4.html'">
+
+🎀 Next Surprise ➜
+
+</button>
+
+
+</div>
+
+
+</body>
+</html>
