@@ -1,0 +1,223 @@
+<!DOCTYPE html>  <html lang="en">  <head>  <meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>🎀 Things That Make You 🎀</title>  <style>  
+  
+*{  
+margin:0;  
+padding:0;  
+box-sizing:border-box;  
+font-family:'Trebuchet MS',sans-serif;  
+}  
+  
+body{  
+  
+min-height:100vh;  
+display:flex;  
+justify-content:center;  
+align-items:center;  
+padding:25px;  
+  
+background:linear-gradient(  
+-45deg,  
+#ffb6d9,  
+#ffd6e7,  
+#ffe8f3,  
+#fbc2eb,  
+#fff2f8  
+);  
+  
+background-size:400% 400%;  
+animation:bg 12s infinite alternate;  
+  
+}  
+  
+  
+@keyframes bg{  
+  
+0%{  
+background-position:0% 50%;  
+}  
+  
+100%{  
+background-position:100% 50%;  
+}  
+  
+}  
+  
+  
+.card{  
+  
+width:min(92vw,430px);  
+  
+background:rgba(255,255,255,.95);  
+  
+border:2px solid #ffd6e7;  
+  
+border-radius:28px;  
+  
+padding:25px;  
+  
+box-shadow:0 18px 40px rgba(0,0,0,.18);  
+  
+text-align:center;  
+  
+animation:pop .8s ease;  
+  
+}  
+  
+  
+@keyframes pop{  
+  
+from{  
+opacity:0;  
+transform:translateY(40px) scale(.9);  
+}  
+  
+to{  
+opacity:1;  
+transform:translateY(0) scale(1);  
+}  
+  
+}  
+  
+  
+.top{  
+  
+font-size:32px;  
+  
+animation:float 2.5s infinite;  
+  
+}  
+  
+  
+@keyframes float{  
+  
+50%{  
+transform:translateY(-8px);  
+}  
+  
+}  
+  
+  
+h1{  
+  
+color:#ff4f87;  
+  
+margin:15px 0;  
+  
+}  
+  
+  
+.subtitle{  
+  
+color:#777;  
+  
+margin-bottom:20px;  
+  
+}  
+  
+  
+.noteBox{  
+  
+padding:16px;  
+  
+border-radius:18px;  
+  
+margin:14px 0;  
+  
+text-align:left;  
+  
+opacity:0;  
+  
+transform:translateY(30px);  
+  
+animation:show .8s forwards;  
+  
+}  
+@keyframes show{  
+  
+to{  
+  
+opacity:1;  
+  
+transform:translateY(0);  
+  
+}  
+  
+}  
+  
+  
+h3{  
+  
+color:#ff4f87;  
+  
+margin-bottom:8px;  
+  
+}  
+  
+  
+p{  
+  
+color:#555;  
+  
+line-height:1.7;  
+  
+}  
+  
+  
+button{  
+  
+margin-top:25px;  
+  
+padding:15px 35px;  
+  
+border:none;  
+  
+border-radius:40px;  
+  
+background:#111;  
+  
+color:white;  
+  
+font-size:17px;  
+  
+font-weight:bold;  
+  
+cursor:pointer;  
+  
+transition:.3s;  
+  
+}  
+  
+  
+button:hover{  
+  
+transform:scale(1.05);  
+  
+}  
+  
+</style>  </head>  <body>  <div class="card">  <div class="top">  🎀 🌸 💖 🌸 🎀
+
+</div>  <h1>  Things That Make You... You 🎀
+
+</h1>  <div class="subtitle">  A few completely honest observations... 😂👇
+
+</div>  <div class="noteBox" style="background:#ffe4ec;">  <h3>💛 Caring 🎀</h3>  <p>  Even if you pretend not to care, deep down you always do. You notice the little things that many people miss. 🌸
+
+</p>  </div>  <div class="noteBox" style="background:#fff3c4;">  <h3>🧸 QT 🎀</h3>  <p>  Your random expressions, funny reactions and cute moments make you unique. 🌷💖
+
+</p>  </div>  
+<div class="noteBox" style="background:#d8f3ff;">  <h3>😎 Attitude Wali 🎀</h3>  <p>  Sometimes your attitude reaches the sky... 😂 but somehow it makes you more special. ✨
+
+</p>  </div>  <div class="noteBox" style="background:#daf8d8;">  <h3>🌟 Encouraging 🎀</h3>  <p>  Your words can make someone's day better. Never lose this beautiful quality. 💖
+
+</p>  </div>  <button onclick="nextPage()">  🎀 Next Surprise ➜ 🎀
+
+</button>  </div>  <script>  
+  
+function nextPage(){  
+  
+window.location.href="page4.html";  
+  
+}  
+  
+</script>  </body>  </html>
