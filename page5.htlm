@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Final Words 🎀</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+margin:0;
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:20px;
+
+overflow-x:hidden;
+
+background:linear-gradient(135deg,#ffeaf5,#fff6dc,#e8f8ff);
+
+}
+
+
+/* Background blobs */
+
+.blob{
+
+position:fixed;
+border-radius:50%;
+filter:blur(45px);
+opacity:.35;
+z-index:-1;
+
+animation:float 8s infinite alternate;
+
+}
+
+
+.b1{
+
+width:250px;
+height:250px;
+background:#ff8fc7;
+top:-80px;
+left:-80px;
+
+}
+
+
+.b2{
+
+width:230px;
+height:230px;
+background:#ffd86b;
+right:-70px;
+top:200px;
+
+}
+
+
+.b3{
+
+width:250px;
+height:250px;
+background:#8edcff;
+bottom:-100px;
+left:100px;
+
+}
+
+
+
+@keyframes float{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(40px);
+}
+
+}
+
+
+
+/* Main card */
+
+.card{
+
+width:min(95vw,500px);
+
+background:rgba(255,255,255,.9);
+
+backdrop-filter:blur(10px);
+
+padding:25px;
+
+border-radius:35px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+animation:show .9s ease;
+
+}
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* Final box */
+
+.final-box{
+
+background:linear-gradient(135deg,#f2e8ff,#fff);
+
+padding:22px;
+
+border-radius:22px;
+
+margin:18px 0;
+
+text-align:center;
+
+box-shadow:0 10px 22px rgba(210,180,255,.25);
+
+animation:fade 1s ease;
+
+}
+
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:scale(.9);
+
+}
+
+to{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+}
+
+
+
+h3{
+
+color:#ff4f87;
+
+font-size:22px;
+
+}
+
+
+
+p{
+
+font-size:17px;
+
+line-height:2;
+
+color:#555;
+
+}
+
+
+
+/* Name highlight */
+
+.name-box{
+
+margin-top:25px;
+
+padding:18px;
+
+border-radius:18px;
+
+background:linear-gradient(90deg,#ff4d88,#ff7eb3);
+
+color:white;
+
+font-size:28px;
+
+font-weight:bold;
+
+box-shadow:0 0 20px rgba(255,77,136,.5);
+
+animation:pulse 1.8s infinite;
+
+}
+
+
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+}
+
+
+
+/* Floating emojis */
+
+.flower{
+
+position:fixed;
+
+bottom:-40px;
+
+animation:rise linear infinite;
+
+pointer-events:none;
+
+}
+
+
+
+@keyframes rise{
+
+from{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-110vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.card{
+
+padding:18px;
+
+border-radius:25px;
+
+}
+
+p{
+
+font-size:15px;
+
+}
+
+.name-box{
+
+font-size:22px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+
+
+<div class="card">
+
+
+<div class="final-box">
+
+
+<h3>🎀 Final Words 🎀</h3>
+
+
+<p>
+
+Happy Friendship Day! 🌸💖<br><br>
+
+Thank you for all the laughs, the memories, and every little moment we've shared. ✨<br><br>
+
+Never change yourself just to make someone else happy.<br>
+
+You are already amazing exactly the way you are. 💛<br><br>
+
+Keep smiling. 🌸<br>
+
+Keep shining. ✨<br>
+
+Keep being the wonderful, funny, and amazing person you are. 🎀💖<br><br>
+
+😂 And one more thing...<br>
+Maybe spend a little more time studying... and a little less time thinking about Ishan. 📚🤭
+
+</p>
+
+
+<div class="name-box">
+
+💖 TAKE CARE SHOLANKINI 🎀
+
+</div>
+
+
+<p style="margin-top:15px;font-size:16px;color:#888;">
+
+🌸 See you again in another beautiful memory... 🎀✨
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+let emoji=[
+
+"🎀","🌸","🌼","✨",
+
+"💛","🦋","🌺","🌷","💖"
+
+];
+
+
+for(let i=0;i<45;i++){
+
+let e=document.createElement("div");
+
+e.className="flower";
+
+e.innerHTML=emoji[Math.floor(Math.random()*emoji.length)];
+
+e.style.left=Math.random()*100+"vw";
+
+e.style.fontSize=(18+Math.random()*20)+"px";
+
+e.style.animationDuration=(5+Math.random()*7)+"s";
+
+
+document.body.appendChild(e);
+
+}
+
+</script>
+
+
+</body>
+</html>
