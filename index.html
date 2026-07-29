@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎀 A Tiny Surprise 🎀</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Trebuchet MS',sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+
+background:linear-gradient(
+-45deg,
+#ffb6d9,
+#ffd6e7,
+#ffe8f3,
+#fbc2eb,
+#ffd1dc,
+#fff2f8
+);
+
+background-size:500% 500%;
+animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+
+width:min(92vw,400px);
+padding:28px 22px;
+background:rgba(255,255,255,.92);
+backdrop-filter:blur(12px);
+border-radius:28px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+border:2px solid rgba(255,255,255,.8);
+animation:pop .8s ease;
+z-index:5;
+
+}
+
+@keyframes pop{
+from{
+opacity:0;
+transform:translateY(30px) scale(.9);
+}
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+h1{
+color:#ff4f87;
+font-size:clamp(24px,6vw,30px);
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:17px;
+color:#777;
+margin-bottom:18px;
+}
+
+.note{
+background:#fff9fc;
+padding:22px;
+border-radius:20px;
+box-shadow:inset 0 0 15px rgba(255,180,210,.3);
+}
+
+p{
+font-size:16px;
+line-height:1.9;
+color:#555;
+}
+
+.highlight{
+color:#ff4f87;
+font-weight:bold;
+}
+
+button{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:17px;
+font-weight:bold;
+background:#111;
+color:#fff;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+animation:pulse 2s infinite;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#000;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.05);
+}
+}
+
+.flower{
+position:fixed;
+top:-50px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.95;
+z-index:1;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10vh) rotate(0deg);
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="flowers"></div>
+
+<div class="card">
+
+<h1>🎀 Hey Baunipie! 🎀</h1>
+
+<div class="subtitle">
+🎀 A Tiny Surprise Just For You 🎀
+</div>
+
+<div class="note">
+
+<p>
+
+🎀 <span class="highlight">Happy Friendship Day!</span> 🎀
+
+<br><br>
+
+I wanted to make something a little special just for you. 🎀
+
+<br><br>
+
+It's a tiny gift from me, and I truly hope it brings a smile to your face. 💖
+
+<br><br>
+
+Thank you for being such a wonderful friend. 🌸
+
+<br><br>
+
+Now tap the button below and continue this little surprise... 🎀✨
+
+</p>
+
+<button onclick="nextPage()">
+🎀 Next Page 🎀
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function nextPage(){
+window.location.href="page2.html";
+}
+
+const items=[
+"🎀","🎀","🎀","🌸","🌷","🌺","💖","✨","🩷","🌼","💮"
+];
+
+for(let i=0;i<35;i++){
+
+let f=document.createElement("div");
+f.className="flower";
+f.innerHTML=items[Math.floor(Math.random()*items.length)];
+
+f.style.left=Math.random()*100+"vw";
+f.style.animationDuration=(5+Math.random()*5)+"s";
+f.style.animationDelay=Math.random()*5+"s";
+f.style.fontSize=(18+Math.random()*18)+"px";
+
+document.getElementById("flowers").appendChild(f);
+
+}
+
+</script>
+
+</body>
+</html>
