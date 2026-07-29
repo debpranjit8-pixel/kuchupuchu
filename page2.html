@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow-x:hidden;
+background:linear-gradient(135deg,#ffe6f0,#f5e8ff);
+font-family:Arial,sans-serif;
+}
+
+
+.card{
+
+width:92vw;
+max-width:420px;
+box-sizing:border-box;
+background:rgba(255,255,255,.95);
+border:2px solid #ffd6e7;
+border-radius:28px;
+padding:22px;
+box-shadow:0 18px 40px rgba(0,0,0,.18);
+text-align:center;
+animation:cardOpen 1.2s ease;
+
+}
+
+
+@keyframes cardOpen{
+
+0%{
+opacity:0;
+transform:scale(.7) translateY(50px);
+}
+
+100%{
+opacity:1;
+transform:scale(1) translateY(0);
+}
+
+}
+
+
+h1{
+
+animation:titlePop 1s ease .4s both;
+
+}
+
+
+@keyframes titlePop{
+
+0%{
+opacity:0;
+transform:translateY(-30px) scale(.5);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+}
+
+
+
+.noteBox{
+
+background:#fffafc;
+padding:18px;
+border-radius:20px;
+text-align:left;
+box-shadow:inset 0 0 15px rgba(255,190,220,.35);
+animation:floatBox 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floatBox{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+}
+
+
+
+.line{
+
+font-size:15.5px;
+line-height:1.8;
+opacity:0;
+transform:translateY(25px);
+animation:showLine .8s ease forwards;
+
+}
+
+
+
+.l1{
+animation-delay:.3s;
+color:#ff4f87;
+}
+
+.l2{
+animation-delay:1s;
+color:#9b59b6;
+}
+
+.l3{
+animation-delay:1.7s;
+color:#3498db;
+}
+
+.l4{
+animation-delay:2.4s;
+color:#e67e22;
+}
+
+.l5{
+animation-delay:3.1s;
+color:#e74c3c;
+}
+
+.l6{
+animation-delay:3.8s;
+color:#27ae60;
+}
+
+.l7{
+animation-delay:4.5s;
+color:#8e44ad;
+}
+
+.l8{
+animation-delay:5.2s;
+color:#16a085;
+}
+
+.l9{
+animation-delay:6s;
+color:#ff4f87;
+font-weight:bold;
+}
+
+
+
+@keyframes showLine{
+
+0%{
+opacity:0;
+transform:translateY(25px) scale(.9);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+}
+
+
+
+
+.nextBtn{
+
+padding:15px 38px;
+border:none;
+border-radius:40px;
+background:#111;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+animation:pulse 1.8s infinite;
+transition:.35s;
+
+}
+
+
+
+.nextBtn:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+@keyframes pulse{
+
+0%,100%{
+
+transform:scale(1);
+box-shadow:0 0 15px rgba(0,0,0,.35);
+
+}
+
+50%{
+
+transform:scale(1.06);
+box-shadow:0 0 30px rgba(255,120,180,.8);
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.card{
+
+padding:18px;
+
+}
+
+
+h1{
+
+font-size:23px!important;
+
+}
+
+
+.nextBtn{
+
+width:100%;
+font-size:17px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h1 style="
+color:#ff4f87;
+margin-bottom:10px;
+font-size:28px;
+">
+🎀 A Little Note For You 🎀
+</h1>
+
+
+<p style="
+color:#888;
+font-size:15px;
+text-align:center;
+">
+🌸 Made with lots of care, just for you. 🌸
+</p>
+
+
+
+<div class="noteBox">
+
+
+<p class="line l1">
+🎀 <b>Dear Baunipie, 🎀</b>
+</p>
+
+
+<p class="line l2">
+✨ Happy Friendship Day!
+</p>
+
+
+<p class="line l3">
+I just wanted to leave you a tiny note before you continue this little surprise. 🎀
+</p>
+
+
+<p class="line l4">
+🌸 Keep smiling because your smile brightens every moment.
+</p>
+
+
+<p class="line l5">
+😂 Never lose your funny and cheerful side.
+</p>
+
+
+<p class="line l6">
+💖 Stay kind, stay happy, and always be yourself.
+</p>
+
+
+<p class="line l7">
+🌷 Thank you for being such a wonderful friend.
+</p>
+
+
+<p class="line l8">
+🎀 I hope this little gift becomes a sweet memory that makes you smile whenever you remember it.
+</p>
+
+
+<p class="line l9">
+🎀 Ready for the next surprise? 👀✨
+</p>
+
+
+
+</div>
+
+
+
+<div style="margin-top:25px;">
+
+<button onclick="location.href='page3.html'" class="nextBtn">
+
+🎀 Next Page ➜ 🎀
+
+</button>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
