@@ -150,19 +150,38 @@ margin-top:25px;
 padding:16px 42px;
 border:none;
 border-radius:50px;
-background:linear-gradient(90deg,#ff4f87,#ff7eb3);
+background:linear-gradient(180deg,#2b2b2b,#000);
 color:#fff;
 font-size:18px;
 font-weight:bold;
 cursor:pointer;
 transition:.35s;
-box-shadow:0 0 25px rgba(255,79,135,.45);
+box-shadow:0 10px 25px rgba(0,0,0,.45);
 animation:pulse 2s infinite;
+position:relative;
+overflow:hidden;
+}
+
+button::before{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:50%;
+height:100%;
+background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);
+transform:skewX(-25deg);
+animation:shineBtn 2.8s linear infinite;
+}
+
+@keyframes shineBtn{
+0%{left:-120%;}
+100%{left:170%;}
 }
 
 button:hover{
-transform:scale(1.08);
-box-shadow:0 0 40px hotpink;
+transform:scale(1.05);
+box-shadow:0 15px 35px rgba(0,0,0,.6);
 }
 
 @keyframes pulse{
