@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Friendship Day 🎀</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Trebuchet MS',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+radial-gradient(circle at top,#ff9cc7,#ffd8eb 35%,#ffeef7 65%,#fff);
+overflow:hidden;
+}
+
+.notebook{
+width:320px;
+height:510px;
+border-radius:18px;
+position:relative;
+overflow:hidden;
+border:3px solid #444;
+background:linear-gradient(135deg,#000,#111,#2d2d2d,#0b0b0b);
+box-shadow:
+0 0 20px rgba(255,105,180,.45),
+0 0 45px rgba(255,105,180,.25),
+0 20px 40px rgba(0,0,0,.5);
+transition:1.2s;
+}
+
+.notebook::before{
+content:"";
+position:absolute;
+top:-40%;
+left:-40%;
+width:180%;
+height:70%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.22),transparent);
+transform:rotate(-25deg);
+animation:shine 4s linear infinite;
+}
+
+@keyframes shine{
+100%{
+transform:translateY(350px) rotate(-25deg);
+}
+}
+
+.notebook::after{
+content:"";
+position:absolute;
+left:16px;
+top:0;
+width:6px;
+height:100%;
+background:#999;
+box-shadow:
+0 28px #999,
+0 56px #999,
+0 84px #999,
+0 112px #999,
+0 140px #999,
+0 168px #999,
+0 196px #999,
+0 224px #999,
+0 252px #999,
+0 280px #999,
+0 308px #999,
+0 336px #999,
+0 364px #999,
+0 392px #999,
+0 420px #999,
+0 448px #999;
+}
+
+.content{
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:25px;
+color:white;
+}
+
+h1{
+font-size:28px;
+line-height:1.4;
+color:#ff82bf;
+margin-bottom:18px;
+text-shadow:0 0 12px hotpink;
+}
+
+p{
+font-size:16px;
+line-height:1.7;
+color:#f5f5f5;
+margin-bottom:14px;
+}
+
+.small{
+font-size:15px;
+color:#ffd6ea;
+margin-bottom:30px;
+font-style:italic;
+}
+
+button{
+padding:14px 48px;
+font-size:20px;
+font-weight:bold;
+border:none;
+border-radius:35px;
+background:linear-gradient(135deg,#ff1e63,#ff5fa2);
+color:white;
+cursor:pointer;
+box-shadow:
+0 0 10px #ff2f7d,
+0 0 25px #ff2f7d,
+0 6px 0 black;
+transition:.3s;
+animation:pulse 1.5s infinite;
+}
+
+button:hover{
+transform:scale(1.07);
+}
+
+@keyframes pulse{
+50%{
+box-shadow:
+0 0 18px #ff2f7d,
+0 0 38px #ff2f7d,
+0 6px 0 black;
+}
+}
+
+.opening{
+animation:openBook 1.2s forwards;
+}
+
+@keyframes openBook{
+0%{
+transform:scale(1);
+}
+40%{
+transform:scale(1.08) rotateY(-15deg);
+}
+100%{
+transform:scale(.08) rotateY(-120deg);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="notebook" id="book">
+
+<div class="content">
+
+<h1>
+🎀 Happy Friendship Day<br>
+Bauni Pie 🎀
+</h1>
+
+<p>
+Just wanted to create this little surprise for you. 💖
+</p>
+
+<p>
+Hope this brings a tiny smile to your face and makes your day a little brighter. 🌸
+</p>
+
+<p class="small">
+Now... open this notebook and let's turn the pages of our friendship. 📖✨
+</p>
+
+<button onclick="openBook()">OPEN</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openBook(){
+
+document.getElementById("book").classList.add("opening");
+
+setTimeout(function(){
+
+window.location.href="page2.html";
+
+},1200);
+
+}
+
+</script>
+
+</body>
+</html>
